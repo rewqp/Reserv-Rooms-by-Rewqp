@@ -36,7 +36,7 @@
      */
      // если нужен проектор
     if ($data['projector'] == 1) {
-        $to      = 'emm.novikova@gmail.com';
+        $to      = 'example@gmail.com';
         $subject = 'Необходим проектор в переговорную Aztec';
 
         $message = '';
@@ -45,8 +45,8 @@
         $message .= 'Бронь установлена до: ' . $data['timeTo'] . '<br /><br />';
         $message .= 'Организатор встречи: ' . $data['creator'];
 
-        $headers = 'From: emm.novikova@gmail.com' . "\r\n" .
-                    'Reply-To: emm.novikova@gmail.com' . "\r\n" .
+        $headers = 'From: example2@gmail.com' . "\r\n" .
+                    'Reply-To: example3@gmail.com' . "\r\n" .
                     'Content-type: text/html; charset=utf-8' .
                     'X-Mailer: PHP/' . phpversion();
         //mail($to, $subject, $message, $headers);
@@ -56,10 +56,10 @@
     if ($data['manager'] == 1) {
         
         // по-умолчанию отправляем
-        $to      = 'emm.novikova@gmail.com';
+        $to      = 'example4@gmail.com';
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // если комната наваджо
+        // если комната Navajo
         if ($data['roomName'] == 'Navajo') {
             $to = 'anotheremail@asds';
         }
@@ -73,8 +73,8 @@
         $message .= 'Организатор встречи: ' . $data['creator'] . '<br />';
         $message .= 'Количество людей: ' . $data['people'];
 
-        $headers = 'From: emm.novikova@gmail.com' . "\r\n" .
-                    'Reply-To: emm.novikova@gmail.com' . "\r\n" .
+        $headers = 'From: example5a@gmail.com' . "\r\n" .
+                    'Reply-To: example6@gmail.com' . "\r\n" .
                     'Content-type: text/html; charset=utf-8' .
                     'X-Mailer: PHP/' . phpversion();
         //mail($to, $subject, $message, $headers);

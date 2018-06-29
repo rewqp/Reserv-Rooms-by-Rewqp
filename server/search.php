@@ -28,22 +28,6 @@
   $data['timeFrom'] = date("H:i:s", strtotime($data['timeFrom']) + 60);
   $data['timeTo'] = date("H:i:s", strtotime($data['timeTo']));
 
-  // print_r("SELECT *
-  // FROM reservations
-  // WHERE DATE(date_time_start) = '".$data['date']."'
-  // AND
-  // (
-  //   TIME(date_time_start) <= '".$data['timeFrom']."' AND TIME(date_time_end) >= '".$data['timeTo']."'
-  //   OR
-  //   (
-  //     TIME(date_time_start) BETWEEN '".$data['timeFrom']."' AND '".$data['timeTo']."'
-  //     OR
-  //     TIME(date_time_end) BETWEEN '".$data['timeFrom']."' AND '".$data['timeTo']."'
-  //   )
-  // )");
-  // die;
-
-
   // get all reservations
   $reservations = $pdo->query("
     SELECT *
@@ -158,62 +142,3 @@
   ));
 
 ?>
-
-<?php 
-//   //Создаём масив statusRooms в котором присваем статус 1, 2, 3, соответсвующим комнатам 
-//     $statusRooms = [
-//        //Вывести строку с масива с подходящей комнатой 
-//     "greenRoom" => "1", //Свободная и самая подходящая переговорная комната по всем параметрам
-//        //Вывести строку с масива с менее подходящими комнатами
-//     "orangeRoom" => "2", //Свободная комната, но не подходящая под необходимые параметры (Наличие проектора/Маркерной доски/Кол-во людей)
-//        //Вывести строк с масива с занятыми комнатами
-//     "redRoom" => "3", //Занятые комнаты
-//   ];
-
-
-//   //Описываем комнату с проектором
-//   if ($data['projector'] == 1 > $greenRoom):
-//     echo $greenRoom { //Если комната соответствует наличию проектора добавляем её в массив greenRoom
-// //проверяем свободна ли комната по времени
-// //проверяем базу 
-
-//     //timeFrom = if true - комната свободна для бронирования 
-//               //if false - комната занята на время бронирования
-//     //timeTo =   if true - комната свободна для бронирования 
-//               //if false - комната занята на время бронирования
-//     elseif($timeFrom = true && $timeTo = true): //Если по врмени комната свободна добавляем её в массив greenRoom
-//       echo $greenRoom; //Выводим масив свободных комнат
-//        elseif($timeFrom = false && $timeTo = false): //Добавляем в массив занятых комнат и выводим
-//          echo $redRoom; //Выводим массив занятых комнат
-//       else:
-//         //Если комната занята выводим уведомление о том, что комната соответвующая запросу не найдена
-//         //а так же, выводим статус всех комнат и надпись о том что соответствующая комната не найдена
-//       echo $statusRoom." Комната соответсвтующая запросу не найдена ".;
-//     endif;
-
-//   }
-
-//         if ($data['projector'] == 1) {
-//           echo $greenRoom;
-//         } 
-//         elseif ($timeFrom = true && $timeTo = true) {
-//           echo $greenRoom;
-//         } 
-//         elseif ($timeFrom = false && $timeTo = false) {
-//             echo $redRoom;
-//         }
-
-//         switch ($i) {
-//             case 0:
-//                 echo "i equals 0";
-//                 break;
-//             case 1:
-//                 echo "i equals 1";
-//                 break;
-//             case 2:
-//                 echo "i equals 2";
-//                 break;
-//         }
-?>
-
-
