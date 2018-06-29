@@ -8,7 +8,6 @@
 			header("Location: index.php");
 		}
 	}
-	//include '../db/db_conect.php';
 ?>
  
 <html>

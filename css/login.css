@@ -73,7 +73,6 @@ input.login {
 	height: 20px;
 	-moz-border-radius-topleft: 4px; -moz-border-radius-topright: 4px;
 	-webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px;
-	/*background: url(../img/logo.gif) no-repeat left 1px; */
 }
 
 .fieldLogin {
