@@ -2,3 +2,4 @@ bower_components/*
 auth/*
 auth/
 db/*
+db/
