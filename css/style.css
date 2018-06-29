@@ -1,0 +1,550 @@
+html, 
+body {
+    height: 90%;
+}
+
+body {
+    background-color: #2F2F2F;
+    font-size: 16px;
+    font-family: Arial;
+    padding: 20px 20px 20px 20px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: -6px;
+}
+
+hr.line {
+    margin-top: 10px;
+}
+
+input {
+    color: black;
+    border-radius: 0%;
+}
+
+input::-webkit-inner-spin-button {  
+    /*-webkit-appearance: none;    */
+    display: block;    
+    width: 10px;    
+    opacity: 1;  
+    background-color: #979797;
+    color: #FFFFFF;
+}
+
+label {
+    font-weight: 100;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.calendar a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: right;
+}
+
+/*Для добавления иконок календарей в фиксированном списке сбоку*/
+.calendar-icon {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: -12px;
+    right: -2px;
+}
+.calendar {
+    text-align: right;
+}
+.fixed-calendar {
+    width: 180px;
+}
+
+img {
+    width: 80px;
+}
+li {
+    list-style-type: none;
+}
+ul {
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+footer {
+    height: 50px;
+    width: 100%;    
+    padding: 10px; 
+    background: #2F2F2F; 
+    color: #fff; 
+    text-align: center;
+    text-decoration: none;
+    clear: both;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+header {
+    margin-bottom: 60px;
+}
+
+/*Логин, цвета*/
+.LogoAut {
+	font-size: 28px;
+	font-weight: 100;
+	color: white;
+	letter-spacing: 1px;
+}
+
+.RedPlus {
+	color: red;
+}
+
+.HeaderContainer {
+    width: 1200px;
+    margin: auto;
+    color: #ffffff;
+}
+
+.main-container {
+    width: 1200px;
+    color: #FFFFFF;
+    margin: auto;
+    min-height: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 100px;
+}
+
+.left-container {
+    width: 80%;
+    float: left;
+}
+.right-container {
+    width: 15%;
+    float: right;
+    text-align: right;
+}
+
+.miniImg {
+    width: 10%;
+}
+
+.big-letters {
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.InSiDe {
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 100;
+}
+
+.second {
+    padding: 160px 0;
+    margin-top: 20px;
+    width: 50%;
+}
+
+.DataTime {
+    margin-top: 15px;
+    max-height: 50px;
+}
+
+.DateSetup { 
+    float: left;
+    display: block;
+    height: 100%;
+    width: 180px;
+}
+
+.TimeSetup {
+    float: left;
+    display: block;
+    height: 100%;
+    width: 160px;
+    margin-left: 20px;
+}
+
+.EnterTime {
+    float: left;
+    line-height: 32px;
+    background-color: #979797;
+    width: 32px;
+    height: 36px;
+    text-align: center;
+}
+/* Cначала обозначаем стили для IE8 и более старых версий
+т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+.checkbox {
+    vertical-align: top;
+    margin: 0 3px 0 0;
+    width: 17px;
+    height: 17px;
+  }
+  /* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+  селекторы с плюсом. Показываем, что label кликабелен. */
+  .checkbox + label {
+    cursor: pointer;
+  }
+    /* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+  Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+  в них все нижеследующие стили не сработают. */
+    /* Прячем оригинальный чекбокс. */
+  .checkbox:not(checked) {
+    position: absolute;
+    opacity: 0;
+  }
+  .w50{
+    width: 50px;
+  }
+  .checkbox:not(checked) + label {
+    position: relative; /* будем позиционировать псевдочекбокс относительно label */
+    padding: 0 0 0 0px; /* оставляем слева от label место под псевдочекбокс */
+  }
+  /* Оформление первой части чекбокса в выключенном состоянии (фон). */
+  .checkbox:not(checked) + label:before {
+    line-height: 20px;
+    content: 'нет';
+    text-align: right;
+    color: #fff;
+    font-size: 13px;
+    padding: 2px 2px 0;
+    position: absolute;
+    top: 10px;
+    right: -100px;
+    width: 50px;
+    height: 26px;
+    /*border-radius: 13px;*/
+    background: #979797;
+    box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+  }
+  /* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+  .checkbox:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: -74px;
+    width: 22px;
+    height: 23px;
+    /*border-radius: 10px;*/
+    background: #FFF;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+  }
+  /* Меняем фон чекбокса, когда он включен. */
+  .checkbox:checked + label:before {
+    text-align: left;
+    padding-left: 6px;
+    content: 'да';
+    color: #fff;
+    background: red;
+  }
+  /* Сдвигаем переключатель чекбокса, когда он включен. */
+  .checkbox:checked + label:after {
+    right: -99px;
+    top: 11px;
+  }
+  /* Показываем получение фокуса. */
+  .checkbox:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0,0,0,.3);
+  }
+
+.People {
+    float: left;
+    display: block;
+    height: 100%;
+    width: 75px;
+    margin-right: 90px;
+}
+.Projector {
+    float: left;
+    display: block;
+    height: 100%;
+    width: 140px;
+    margin-left: 40px;
+}
+.MarkerBoard {
+    float: left;
+    display: block;
+    height: 100%;
+    width: 75px;
+    margin-left: 35px;
+}
+
+.People span {
+    white-space: normal;
+}
+.Projector span {
+    white-space: normal;
+    display: inline-block;
+    max-width: 50px;
+}
+.MarkerBoard span {
+    white-space: normal;
+}
+
+.Deya {
+    cursor: pointer;
+    position: relative;
+    top: -15px;
+    left: 20px;
+    width: 90px;
+    outline: none;
+    transition: transform 0.2s;
+}
+
+.Deya:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.form-control {
+    border-radius: 0%;
+    height: 36px;
+}
+.input-group-addon {
+    border-radius: 0%;
+    background-color: #979797;
+    border: 1px solid #979797;
+}
+
+.input-group-addon .glyphicon {
+    color: white;
+}
+
+.EnterPeople {
+    padding: 0 0 0 3px;
+    margin-left: 130px;
+    margin-top: -34px;
+    position: absolute;
+    width: 50px;
+}
+
+.name {
+    font-style: italic;
+}
+
+.AnotherRoom {
+    margin-left: 15px;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
+label.manager {
+    width: 70%;
+    margin-right: 105px;
+}
+
+.AnotherButton {
+    background-color: transparent;
+    color: #fff;
+    font-style: italic;
+    border: none;
+    text-decoration: underline;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.choose {
+    background-color: #279949;
+    border: none;
+    float: right;
+    padding: 6px;
+    font-size: 20px;
+    color: #2F2F2F;
+}
+
+.cancel {
+    color: #2F2F2F; 
+    background-color: #9a372a;
+    border: none;
+    float: right;
+    font-size: 20px;
+    padding: 5px;    
+}
+
+.save {
+    color: #2F2F2F; 
+    background-color: #279949;
+    border: none;
+    float: right;
+    font-size: 20px;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+.FreeRoom.green:before{
+    content: " ";
+    background-color: #279949; 
+    font-size: 100%; 
+    padding: 15px 4px 5px 8px;
+    position: relative;
+    top: 15px;
+}
+.FreeRoom:before{
+    content: " ";
+    background-color: #f79124; 
+    font-size: 100%; 
+    padding: 15px 4px 5px 8px;
+    position: relative;
+    top: 15px;
+}
+.FreeRoom .name { margin-left: 6px; }
+.FreeRoom .description { margin-left: 20px; }
+
+.BusyRoom {
+    font-size: 14px;
+    margin: 16px 0;
+}
+.BusyRoom .name { margin-left: 5px; }
+.BusyRoom .description { margin-left: 20px; }
+
+.BusyRoom:before {
+    content: " ";
+    color: #C63321;   
+    background-color: #C63321; 
+    font-size: 100%; 
+    padding: 15px 4px 5px 8px; 
+    position: relative;
+    top: 15px;
+}
+.room .description .marker-board, 
+.room .description .no-marker-board, 
+.room .description .no-projector, 
+.room .description .projector {
+    position: relative;
+    left: -3px;
+}
+
+.hideTheme {
+    float: left;
+    width: 45%;
+    line-height: 45px;
+}
+
+.manager {
+    float: right;
+    width: 50%; 
+    line-height: 45px;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.reservation-form-container {
+    height: 250px;
+    margin: 20px 0 10px;
+}
+.reservation-form-group {
+    width: 100%;
+    height: 50px;
+}
+.reservation-form-group .reservation-text {
+    width: 35%;
+    float: left;
+}
+.reservation-form-group .reservation-input {
+    width: 64%;
+    float: right;
+}
+.reservation-form-group .reservation-input input {
+    width: 100%;
+    padding: 5px;
+}
+
+.best-options {
+    margin-top: 10px;
+    font-weight: 100;
+    color: #fff;
+}
+
+.best-room-template {
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.best-room-template:nth-child(odd) {
+    border-top: 0;
+}
+
+.room .description {
+    font-style: italic;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.room .title {
+    display: block;
+    line-height: 25px;
+    margin-top: -6px;
+}
+
+.hidden {
+    display: none;
+}
+
+.LiveMarkers {
+    clear: both;
+    height: 50px;
+}
+.main-form-container {
+    position: relative;
+    padding: 10px;
+}
+.blocker {
+    display: none;
+    width: 69%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    opacity: 0.4;
+}
+
+/* PLUGINS STYLING */
+
+.toast-success * { font-size: 13px !important; }
+
+.bootstrap-datetimepicker-widget{ color: #000 !important; }
+
+.bootstrap-datetimepicker-widget a{ color: #000 !important; }
+
+.timepicker .bootstrap-datetimepicker-widget {
+    max-width: 100px;
+    max-height: 200px;
+}
+
+.timepicker .bootstrap-datetimepicker-widget table td {
+    height: 15px !important;
+    line-height: 0 !important;
+    padding: 0 !important;
+}
+
+.timepicker .bootstrap-datetimepicker-widget table td span {
+    height: auto !important;
+    line-height: 0 !important;
+}
+
+.glyphicon {
+    font-size: 22px;
+    padding: 0 !important;
+}
+
+span.input-group-addon {
+    padding: 5px 5px 5px 5px !important;
+}

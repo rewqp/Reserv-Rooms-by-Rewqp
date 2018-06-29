@@ -1,0 +1,23 @@
+{
+  "name": "reservations",
+  "authors": [
+    "Emma <emm.novikova@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "eonasdan-bootstrap-datetimepicker": "^4.17.47",
+    "bootstrap": "^3.3.7",
+    "toastr": "^2.1.3"
+  }
+}

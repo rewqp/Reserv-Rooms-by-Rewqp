@@ -1,0 +1,99 @@
+body {
+	background-color: #2F2F2F;
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+	font-size: 12px;
+	color: #2e2e2e;
+	text-align: center;
+}
+
+.LogoAut {
+	font-size: 28px;
+	font-weight: 100;
+	color: white;
+	letter-spacing: 1px;
+}
+
+.clear {clear: both;}
+small {font-size: 11px; color: #5b5b5b;}
+img {border: none;}
+a {color: #000}
+a:hover {color: #000;}
+label {padding: 0; margin: 0 0 10px 0;}
+input {padding: 4px;color: #5b5b5b;}
+input.login { 
+	width: 300px; 
+	margin: 5px 0 10px 0px; 
+    padding: 5px 6px 6px 5px;
+	line-height: 20px;
+}
+
+.button {
+	cursor: pointer;
+	padding: 4px 10px 4px 10px;
+	color: #fff;
+	background: black;
+	border: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+#header {
+	width: 100%;
+	height: 75px;
+	z-index: 1000;
+}
+
+.inHeader {
+	width: 920px;
+	height: 45px;
+	padding: 15px;
+}
+
+.RedPlus {
+	color: red;
+}
+
+#loginForm {
+	width: 400px;
+	height: 250px;
+	float: center;
+	text-align: left;
+	margin: 50px auto 0 auto;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+.headLoginForm {
+	width: 380px;
+	padding: 0 0 0 20px;
+	font-size: 18px;
+	text-align: left;
+	height: 20px;
+	-moz-border-radius-topleft: 4px; -moz-border-radius-topright: 4px;
+	-webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px;
+	/*background: url(../img/logo.gif) no-repeat left 1px; */
+}
+
+.fieldLogin {
+	margin: 65px 5px 0 20px;
+}
+
+.Deya {
+	cursor: pointer;
+	position: relative;
+    width: 90px;
+    left: 84%;
+	top: -117px;
+	transition: transform 0.2s;
+	outline: none;
+}
+
+.Deya:hover {
+    transform: scale(1.1, 1.1);
+}
+
+input[type="submit"] {
+    background: url('reds.svg') !important;
+}
