@@ -3,3 +3,4 @@ auth/*
 auth/
 db/*
 db/
+db
